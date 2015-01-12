@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="chr-Pv-WEF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qki-rH-Mj8">
+                                <rect key="frame" x="210" y="117" width="180" height="46"/>
+                                <color key="backgroundColor" red="0.95294123890000004" green="0.76470595600000002" blue="0.20392158630000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="PrT-1d-Jw3"/>
+                                    <constraint firstAttribute="width" constant="180" id="dXI-a9-kgy"/>
+                                </constraints>
+                                <state key="normal" title="Login-ShareOnTwitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tweet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oRy-ay-bKU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VF5-G7-y4w">
+                                <rect key="frame" x="210" y="215" width="180" height="46"/>
+                                <color key="backgroundColor" red="0.95294123890000004" green="0.76470595600000002" blue="0.20392158630000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Rh9-vd-JPN"/>
+                                    <constraint firstAttribute="width" constant="180" id="vxR-Fz-DTt"/>
+                                </constraints>
+                                <state key="normal" title="Reply">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Reply:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5fO-jU-Ug0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLA-7x-VhV">
+                                <rect key="frame" x="210" y="328" width="180" height="46"/>
+                                <color key="backgroundColor" red="0.95294123890000004" green="0.76470595600000002" blue="0.20392158630000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="KyV-JC-JuO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="mh6-fl-mun"/>
+                                    <constraint firstAttribute="height" constant="46" id="of0-FF-4qD"/>
+                                </constraints>
+                                <state key="normal" title="Favorite">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="favorite:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xdG-Sx-d5o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgK-qU-8qg">
+                                <rect key="frame" x="210" y="428" width="180" height="46"/>
+                                <color key="backgroundColor" red="0.95294123890000004" green="0.76470595600000002" blue="0.20392158630000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="D2i-4e-QrJ"/>
+                                    <constraint firstAttribute="height" constant="46" id="Wv1-yl-5FV"/>
+                                </constraints>
+                                <state key="normal" title="ReTweet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retweet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7wY-I7-Pau"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="qki-rH-Mj8" secondAttribute="centerY" constant="160" id="54D-7k-2RO"/>
+                            <constraint firstAttribute="centerX" secondItem="qki-rH-Mj8" secondAttribute="centerX" id="9Lq-jx-vGK"/>
+                            <constraint firstAttribute="centerX" secondItem="pgK-qU-8qg" secondAttribute="centerX" id="IiB-9e-4Mq"/>
+                            <constraint firstAttribute="centerX" secondItem="VF5-G7-y4w" secondAttribute="centerX" id="Pwj-41-3kL"/>
+                            <constraint firstItem="pgK-qU-8qg" firstAttribute="top" secondItem="dLA-7x-VhV" secondAttribute="bottom" constant="54" id="bGu-n9-mrU"/>
+                            <constraint firstAttribute="centerX" secondItem="dLA-7x-VhV" secondAttribute="centerX" id="cPS-iu-tRR"/>
+                            <constraint firstItem="dLA-7x-VhV" firstAttribute="top" secondItem="VF5-G7-y4w" secondAttribute="bottom" constant="67" id="qwQ-Ff-JV6"/>
+                            <constraint firstItem="VF5-G7-y4w" firstAttribute="top" secondItem="qki-rH-Mj8" secondAttribute="bottom" constant="52" id="zeA-1K-KJY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="e4u-JJ-2j9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="289"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tD7-Eo-ijV">
+            <objects>
+                <navigationController id="chr-Pv-WEF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Hp-oY-joS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="hfN-h0-sit"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpX-W2-XOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-351" y="289"/>
+        </scene>
+    </scenes>
+</document>
